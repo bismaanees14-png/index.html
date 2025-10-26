@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bisma Anees — Portfolio</title>
+  <meta name="description" content="Professional portfolio of a creative graphic designer for brand and business." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7c3aed; --glass: rgba(255,255,255,0.04);
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Inter',system-ui,Arial;color:#e6eef6;background:linear-gradient(180deg,#071029 0%, #071a2b 100%);}
+    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-top:36px}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .cta{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+    .skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+    .profile-img{width:100%;height:100%;border-radius:10px;object-fit:cover}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .project{border-radius:10px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2));}
+    .project img{width:100%;display:block}
+    .project .pmeta{padding:12px}
+    footer{margin-top:40px;color:var(--muted);text-align:center;padding:24px}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-top:8px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.projects{grid-template-columns:repeat(2,1fr)}.grid-2{grid-template-columns:1fr}}
+    @media (max-width:560px){.projects{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">BA</div>
+        <div>
+          <div style="font-weight:800">Bisma Anees</div>
+          <div style="font-size:12px;color:var(--muted)">Creative Graphic Designer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Hi — I'm Bisma. I design creative visuals for brands and businesses.</h1>
+        <p class="lead">I’m a creative graphic designer for brand and business — crafting unique logos, posters, banners, and more to bring your vision to life.</p>
+        <a class="cta" href="#contact">Hire Me</a>
+
+        <div id="about" style="margin-top:18px">
+          <h3 style="margin:0 0 8px">About me</h3>
+          <p style="color:var(--muted);margin:0 0 12px">I'm a creative graphic designer for brand and business, passionate about designing visuals that inspire and attract.</p>
+          <div class="skills" id="skills">
+            <div class="skill">Logo Design</div>
+            <div class="skill">Business Card</div>
+            <div class="skill">Poster Design</div>
+            <div class="skill">Banner Design</div>
+            <div class="skill">Creative Graphics</div>
+          </div>
+        </div>
+
+        <div id="work" style="margin-top:18px">
+          <h3 style="margin:14px 0 8px">Selected work</h3>
+          <div class="projects">
+            <article class="project">
+              <img src="https://via.placeholder.com/600x400?text=Logo+Design+for+Boutique" alt="Logo Design for Boutique">
+              <div class="pmeta">
+                <strong>Logo Design for Boutique</strong>
+                <div style="color:var(--muted);font-size:13px">Elegant branding concept for a fashion boutique.</div>
+              </div>
+            </article>
+            <article class="project">
+              <img src="https://via.placeholder.com/600x400?text=Fashion+and+Food+Poster" alt="Fashion and Food Poster">
+              <div class="pmeta">
+                <strong>Fashion and Food Poster</strong>
+                <div style="color:var(--muted);font-size:13px">Creative poster design highlighting lifestyle and taste.</div>
+              </div>
+            </article>
+            <article class="project">
+              <img src="https://via.placeholder.com/600x400?text=Business+Card+Design" alt="Business Card Design">
+              <div class="pmeta">
+                <strong>Business Card Design</strong>
+                <div style="color:var(--muted);font-size:13px">Professional business card for branding.</div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <img class="profile-img" src="https://via.placeholder.com/380x380?text=Profile+Coming+Soon" alt="Bisma">
+          <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:800">Available for freelance</div>
+              <div style="font-size:13px;color:var(--muted)">Open to full projects & collaborations</div>
+            </div>
+            <span style="color:var(--muted);font-weight:700">CV Coming Soon</span>
+          </div>
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">Contact: <a href="mailto:bismaanees14@gmail.com" style="color:inherit;text-decoration:underline">bismaanees14@gmail.com</a></div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4 style="margin:0 0 8px">Contact</h4>
+          <form class="contact-form" id="contact">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea rows="4" placeholder="Message" required></textarea>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <button type="submit" style="flex:1;padding:10px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:700">Send</button>
+            </div>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Bisma Anees — Made with ❤️ — <span style="color:var(--muted)">Built with HTML & CSS</span>
+    </footer>
+  </div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelector('.contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you! I will contact you soon. (Demo message)');
+    this.reset();
+  });
+</script>
+</body>
+</html>
